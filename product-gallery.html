@@ -1,0 +1,11 @@
+<div >
+  <div class="img-wrap">
+    <img ng-src="{{gemproduct.images}}" />
+  </div>
+  <ul class="img-thumbnails clearfix">
+    <pre>{{gemproduct.images | json}}</pre>
+    <li class="small-image pull-left thumbnail" ng-repeat="image in gemproduct.images">
+      <img ng-src="./images/{{image}}" />
+    </li>
+  </ul>
+</div>
